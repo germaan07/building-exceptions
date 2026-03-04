@@ -8,6 +8,7 @@ import lombok.extern.log4j.Log4j;
 @AllArgsConstructor
 @Log4j
 public class BuildingApp1 implements App<BuildingApp1>{
+    @Override
     public BuildingApp1 run(){
 
     }
