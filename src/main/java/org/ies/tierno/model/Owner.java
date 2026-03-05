@@ -18,11 +18,6 @@ public class Owner {
     }
 
     public boolean exist(String name, String surname){
-        if (name.equals(this.name)){
-            if (surname.equals(this.surname)){
-                return true;
-            }
-        }
-        return false;
+        return name.equals(this.name) && surname.equals(this.surname);
     }
 }

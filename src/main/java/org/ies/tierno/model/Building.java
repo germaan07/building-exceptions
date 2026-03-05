@@ -15,9 +15,7 @@ public class Building {
     private List<Apartment> apartments;
 
     public boolean showApartments(){
-        for (Apartment a : apartments){
-            a.showInfo();
-        }
+        apartments.forEach(Apartment::showInfo);
         return true;
     }
 

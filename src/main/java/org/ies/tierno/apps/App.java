@@ -1,5 +1,8 @@
 package org.ies.tierno.apps;
 
-public interface App<T>{
-    void run();
+import org.ies.tierno.exceptions.ApartmentNotFoundExceptions;
+import org.ies.tierno.exceptions.OptionOutOfMenuException;
+
+public interface App{
+    void run() throws ApartmentNotFoundExceptions, OptionOutOfMenuException;
 }
