@@ -16,7 +16,7 @@ public class BuildingApp1Main {
     public static void main(String[] args) throws ApartmentNotFoundExceptions, OptionOutOfMenuException {
         Scanner scanner = new Scanner(System.in);
         OwnerScannerReader ownerScannerReader = new OwnerScannerReader(scanner);
-        ApartmentScannerReader apartmentScannerReader = new ApartmentScannerReader(scanner, ownerScannerReader)
+        ApartmentScannerReader apartmentScannerReader = new ApartmentScannerReader(scanner, ownerScannerReader);
         BuildingScannerReader buildingScannerReader = new BuildingScannerReader(scanner, apartmentScannerReader);
         BuildingApp1 buildingApp1 = new BuildingApp1(scanner, buildingScannerReader);
         
